@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
   <title>Gloria's Gardening</title>
 </head>
 
 <body>
-  <!-- Navbar Component -->
-  <nav class="navbar-light bg-light navbar navbar-expand-sm ">
+  <!-- Navbar -->
+  <nav class="navbar-light bg-light navbar navbar-expand-sm px-3">
     <a class="navbar-brand" href="#">
       <img src="https://content.codecademy.com/courses/learn-bootstrap-components/logo.png" alt="Gloria's Gardening Logo" height="30">
     </a>
@@ -21,8 +22,9 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+          <!-- <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Weekly Specials</a>
@@ -33,26 +35,24 @@
       </ul>
     </div>
   </nav>
-  <!-- End of navbar component -->
 
   <!-- Start of container -->
   <div class="container">
     <!-- Row with collapsible content -->
     <div class="row">
       <div class="col text-center">
-        <a aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" href="#seedSpecial">
+        <a aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" href="#seedSpecial" style="text-decoration: none;" class="my-5">
           Gearing to Grow?
         </a>
         <p class="collapse" id="seedSpecial">Use promo code "GGarden" for additional 15% off your entire purchase!
         </p>
       </div>
     </div>
-    <!-- End of row with collapsible content -->
 
-    <!-- Row with jumbotron component -->
+    <!-- Replacing jumbotron from Boostrap 4 -->
     <div class="row">
       <div class="col">
-        <div class="jumbotron p-3">
+        <div style="background-color:#E9ECEF;" class="mb-4 p-3 rounded">
           <h1 class="text-center">Welcome to Gloria's Gardening!</h1>
           <hr>
           <p>
@@ -64,13 +64,12 @@
         </div>
       </div>
     </div>
-    <!-- End of row with jumbotron component -->
 
     <!-- Row with cards -->
     <div class="row">
       <div class="col">
         <div class="card h-100">
-          <div class="card-header">
+          <div class="card-header fw-bold">
             Planting in the Spring
           </div>
           <img class="card-img-top" src="https://content.codecademy.com/courses/learn-bootstrap-components/summer1.png"
@@ -84,7 +83,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <div class="card-header">
+          <div class="card-header fw-bold">
             Interested in exotic flowers?
           </div>
           <img class="card-img-top" src="https://content.codecademy.com/courses/learn-bootstrap-components/tropical.png"
@@ -97,7 +96,7 @@
         </div>
       </div>
     </div>
-    <!-- End of row with cards -->
+
     <br>
 
     <!-- Row with carousel component -->
@@ -129,7 +128,6 @@
         </div>
       </div>
     </div>
-    <!-- End of row with carousel component -->
 
     <!-- Row with nav component -->
     <div class="row">
@@ -141,14 +139,11 @@
         </nav>
       </div>
     </div>
-    <!-- End of row with nav component -->
   </div>
-  <!-- End of container -->
 
   <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
